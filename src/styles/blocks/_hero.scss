@@ -1,0 +1,125 @@
+@use '../utils/variables' as *;
+@use '../utils/media' as *;
+
+.hero {
+  background-image:
+    linear-gradient(0deg, $color-bg 0%, #00000000 50%),
+    linear-gradient(0deg, #00000066 0%, #00000000 40%),
+    url("../assets/images/hero/background-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - $header-height);
+
+  &__container {
+    padding-top: 14.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    @include mobile {
+      background-image:
+        linear-gradient(0deg, $color-bg 0%, #00000000 50%),
+        linear-gradient(0deg, #00000066 0%, #00000000 40%),
+        url("../assets/images/hero/bg-mobile.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      padding-top: 20%;
+      flex-direction: column-reverse;
+      align-items: start;
+
+      height: calc(100vh - 100px);
+    }
+  }
+
+  .hero-content {
+    max-width: 720px;
+
+    @include tablet {
+      max-width: 300px;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: $hero-title-size;
+      line-height: $hero-title-line;
+      font-weight: 500;
+      color: $color-header-text;
+      margin-bottom: 21px;
+
+      @include tablet {
+        font-size: 46px;
+        line-height: 47.44px;
+        margin-bottom: 16px;
+      }
+    }
+
+    &__description {
+      font-weight: 300;
+      font-size: $hero-desc-size;
+      line-height: $hero-desc-line;
+      letter-spacing: 0%;
+      color: $color-header-text;
+      margin-bottom: 32px;
+
+      @include tablet {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      @include mobile {
+        max-width: 290px;
+      }
+    }
+
+    &__button {
+      background-image: url("../assets/images/hero/bg-btn.png");
+      padding: 21px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: $color-header-text;
+      transition: color 0.15s ease-in-out;
+
+      &:hover {
+        color: $color-link-hover;
+      }
+
+      @include mobile {
+        background-image: url("../assets/images/hero/bg-btn-mobile.png");
+
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+
+  .hero-mark {
+    background-image: url("../assets/images/hero/mark.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 220px;
+    margin-bottom: -62px;
+
+    @include tablet {
+      width: 150px;
+      height: 150px;
+      margin-bottom: -40px;
+    }
+
+    @include mobile {
+      width: 101px;
+      height: 101px;
+      margin-bottom: 150px;
+    }
+  }
+}

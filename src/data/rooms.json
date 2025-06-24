@@ -1,0 +1,69 @@
+[
+  {
+    "title": "Mission Belvedere",
+    "image": "images/room1.jpg",
+    "tag": "Adventure/Mystery",
+    "duration": "60 min",
+    "difficulty": "Difficult",
+    "players": "2–6",
+    "description": "Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts \"Der Kuss\" aus Österreichs sicherstem Museum zu stehlen."
+  },
+  {
+    "title": "Mission Belvedere",
+    "image": "images/room1.jpg",
+    "tag": "Detective",
+    "duration": "60 min",
+    "difficulty": "Difficult",
+    "players": "2–6",
+    "description": "Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts \"Der Kuss\" aus Österreichs sicherstem Museum zu stehlen."
+  },
+  {
+    "title": "School of Magic",
+    "image": "images/room2.jpg",
+    "tag": "Adventure/Fantasy",
+    "duration": "60 min",
+    "difficulty": "Difficult",
+    "players": "2-6",
+    "description": "Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts \"Der Kuss\" aus Österreichs sicherstem Museum zu stehlen."
+  },
+  {
+    "title": "The Unknown",
+    "image": "images/room3.jpg",
+    "tag": "Horror with live actor",
+    "tagIcon": "images/icons/tag-horror.svg",
+    "duration": "60 min",
+    "difficulty": "Difficult",
+    "players": "2-6",
+    "description": "Rette die kleine Sandy, sie wurde von einem Dämon in die Kanalisation der Stadt verschleppt. Werdet zum Helden oder bleibt in der Gewalt des Unbekannten."
+  },
+  {
+    "title": "The Nun",
+    "image": "images/room4.jpg",
+    "tag": "Horror with live actor",
+    "tagIcon": "images/icons/tag-horror.svg",
+    "duration": "60 min",
+    "difficulty": "Difficult",
+    "players": "2-5",
+    "description": "Rette die kleine Sandy, sie wurde von einem Dämon in die Kanalisation der Stadt verschleppt. Werdet zum Helden oder bleibt in der Gewalt des Unbekannten."
+  },
+  {
+    "title": "The Nun",
+    "image": "images/room4.jpg",
+    "tag": "Horror with live actor",
+    "tagIcon": "images/icons/tag-horror.svg",
+    "duration": "60 min",
+    "difficulty": "Difficult",
+    "players": "2-5",
+    "description": "Rette die kleine Sandy, sie wurde von einem Dämon in die Kanalisation der Stadt verschleppt. Werdet zum Helden oder bleibt in der Gewalt des Unbekannten."
+  },
+  {
+    "title": "The Nun",
+    "image": "images/room4.jpg",
+    "tag": "Horror with live actor",
+    "tagIcon": "images/icons/tag-horror.svg",
+    "duration": "60 min",
+    "difficulty": "Difficult",
+    "players": "2-5",
+    "description": "Rette die kleine Sandy, sie wurde von einem Dämon in die Kanalisation der Stadt verschleppt. Werdet zum Helden oder bleibt in der Gewalt des Unbekannten."
+  }
+]

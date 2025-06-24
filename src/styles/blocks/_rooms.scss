@@ -1,0 +1,214 @@
+@use '../utils/variables' as *;
+@use '../utils/media' as *;
+
+.rooms {
+  margin-bottom: 107px;
+
+  &__container {
+    position: relative;
+
+    @include mobile {
+      padding-inline: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    color: $color-header-text;
+    margin-bottom: 34px;
+
+    @include mobile {
+      padding-left: 40px;
+    }
+  }
+}
+
+.rooms__carousel-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.rooms__carousel {
+  display: flex;
+  gap: 10px;
+  min-width: max-content;
+}
+
+.room-card {
+  flex: 0 0 auto;
+  overflow: hidden;
+  background: $color-card-bg;
+  color: $color-card-title;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &__top {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 492px;
+      display: block;
+      object-fit: cover;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 40%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, $color-card-bg 100%);
+      pointer-events: none;
+    }
+
+    .room-card__tag {
+      position: absolute;
+      display: flex;
+      top: 30px;
+      left: 30px;
+      font-weight: 250;
+      font-size: 14px;
+      line-height: 24px;
+      padding: 4px 8px;
+      border: 1px solid $color-header-text;
+      border-radius: 999px;
+      color: $color-header-text;
+    }
+
+    .room-card__title {
+      position: absolute;
+      bottom: 24px;
+      left: 30px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 100%;
+      z-index: 1;
+    }
+  }
+
+  &__content {
+    padding: 16px 0 28px;
+    margin-inline: 30px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $color-card-border;
+    font-weight: 250;
+  }
+
+  &__info {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-header-text;
+    margin-bottom: 24px;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+
+      img {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+
+  &__desc {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/images/rooms/border-btn-card.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-block: 18px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    color: $color-header-text;
+    transition: background 0.2s;
+
+    &:hover {
+      background: $color-card-btn-bg;
+      color: $color-card-btn-text;
+    }
+  }
+}
+
+.carousel-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: $color-carousel-arrow-bg;
+  color: #baab9b;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0;
+  border: 4px solid $color-carousel-arrow-border;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: background-color 0.15s, border 0.15s, color 0.15s;
+
+  &:hover {
+    color: $color-header-text;
+    border-color: $color-carousel-arrow-hover-border;
+    background-color: $color-carousel-arrow-hover-bg;
+  }
+
+  &.left {
+    left: 40px;
+
+    @include mobile {
+      left: 0;
+    }
+  }
+
+  &.right {
+    right: 40px;
+
+    @include mobile {
+      right: 0;
+    }
+  }
+}
+
+.room-card__tag-icon {
+  display: inline-block;
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 6px;
+}
